@@ -1,8 +1,12 @@
-# Zig Disposable Notes
+# Disposable Notes
 
 A **notes application** built with **Zig 0.16.0** (backend) and **SolidJS** (frontend), using a **CQRS + Event-Driven** architecture with **multi-window** support via [webui](https://webui.me).
 
 ---
+
+![screenshot_0](./screenshots/disposable_notes_screenshots_0.png)
+![screenshot_2](./screenshots/disposable_notes_screenshots_2.png)
+![screenshot_1](./screenshots/disposable_notes_screenshots_1.png)
 
 ## Architecture Overview
 

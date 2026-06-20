@@ -1,0 +1,200 @@
+---
+import Layout from "../layout/layout.astro"
+---
+
+<Layout>
+  <div class="fixed top-0 left-0 w-full h-screen z-[-1] overflow-hidden bg-[#0A0A0A]">
+    <div class="masonry-grid columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 p-4 opacity-30 min-h-[200vh]">
+      <div class="masonry-item rounded-2xl overflow-hidden shadow-lg"><img src="https://placehold.co/400x600/1A1A1A/333333?text=Nota" class="w-full h-auto" alt=""></div>
+      <div class="masonry-item rounded-2xl overflow-hidden shadow-lg"><img src="https://placehold.co/400x300/1A1A1A/333333?text=Nota" class="w-full h-auto" alt=""></div>
+      <div class="masonry-item rounded-2xl overflow-hidden shadow-lg"><img src="https://placehold.co/400x800/1A1A1A/333333?text=Nota" class="w-full h-auto" alt=""></div>
+      <div class="masonry-item rounded-2xl overflow-hidden shadow-lg"><img src="https://placehold.co/400x400/1A1A1A/333333?text=Nota" class="w-full h-auto" alt=""></div>
+      <div class="masonry-item rounded-2xl overflow-hidden shadow-lg"><img src="https://placehold.co/400x500/1A1A1A/333333?text=Nota" class="w-full h-auto" alt=""></div>
+      <div class="masonry-item rounded-2xl overflow-hidden shadow-lg"><img src="https://placehold.co/400x700/1A1A1A/333333?text=Nota" class="w-full h-auto" alt=""></div>
+      <div class="masonry-item rounded-2xl overflow-hidden shadow-lg"><img src="https://placehold.co/400x350/1A1A1A/333333?text=Nota" class="w-full h-auto" alt=""></div>
+      <div class="masonry-item rounded-2xl overflow-hidden shadow-lg"><img src="https://placehold.co/400x450/1A1A1A/333333?text=Nota" class="w-full h-auto" alt=""></div>
+      <div class="masonry-item rounded-2xl overflow-hidden shadow-lg"><img src="https://placehold.co/400x600/1A1A1A/333333?text=Nota" class="w-full h-auto" alt=""></div>
+      <div class="masonry-item rounded-2xl overflow-hidden shadow-lg"><img src="https://placehold.co/400x300/1A1A1A/333333?text=Nota" class="w-full h-auto" alt=""></div>
+      <div class="masonry-item rounded-2xl overflow-hidden shadow-lg"><img src="https://placehold.co/400x800/1A1A1A/333333?text=Nota" class="w-full h-auto" alt=""></div>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-[#0A0A0A] to-transparent pointer-events-none"></div>
+  </div>
+
+  <main class="w-full flex flex-col relative z-10">
+    
+    <section class="min-h-screen flex flex-col items-center justify-center p-6">
+      <div class="main-card group relative flex flex-col items-center max-w-sm p-8 transition-all duration-500">
+        <h1 class="text-4xl font-semibold tracking-tight text-white mb-2">dn.</h1>
+        <div class="relative w-full aspect-[4/3] mb-8 mt-6 flex items-center justify-center [perspective:1200px] [transform-style:preserve-3d]">
+          <img class="absolute w-4/5 h-auto object-cover rounded-2xl shadow-sm transition-all duration-700 ease-out opacity-20 [transform:rotateX(20deg)_rotateY(-25deg)_rotateZ(5deg)_translate3d(30px,30px,-100px)] group-hover:[transform:rotateX(15deg)_rotateY(-20deg)_rotateZ(5deg)_translate3d(60px,60px,-120px)]" src="./disposable_note.png" alt="Nota de fondo">
+          <img class="absolute w-4/5 h-auto object-cover rounded-2xl shadow-md transition-all duration-700 ease-out opacity-50 [transform:rotateX(20deg)_rotateY(-25deg)_rotateZ(5deg)_translate3d(15px,15px,-50px)] group-hover:[transform:rotateX(15deg)_rotateY(-20deg)_rotateZ(5deg)_translate3d(30px,30px,-60px)]" src="./disposable_note.png" alt="Nota central">
+          <img class="absolute h-auto object-cover rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.8)] transition-all duration-700 ease-out [transform:rotateX(20deg)_rotateY(-25deg)_rotateZ(5deg)_translate3d(0,0,0)] group-hover:[transform:rotateX(15deg)_rotateY(-20deg)_rotateZ(5deg)_translate3d(0,0,0)_scale(1.05)] border border-white/10" src="./disposable_note.png" alt="Preview principal">
+        </div>
+        <p class="text-center text-gray-400 leading-relaxed mb-8">
+          Una herramienta para aquel que tiene muchas ideas, no sabe dónde guardarlas y le preocupa perderlas.
+        </p>
+        <a href="https://github.com/jhovadev/disposablenotes" class="text-neutral-200">github</a>
+      </div>
+    </section>
+
+    <section class="scroll-section min-h-screen flex flex-col items-center justify-center p-6 max-w-5xl mx-auto w-full">
+      <h2 class="text-3xl md:text-5xl font-semibold tracking-tight text-white mb-16 text-center">Rápido. Simple. Tuyo.</h2>
+      
+      <div class="flex flex-col gap-20 w-full">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-4 order-2 md:order-1">
+            <h3 class="text-2xl font-medium text-white">Atajos de teclado</h3>
+            <p class="text-gray-400 text-lg leading-relaxed">Navega, crea y organiza sin quitar las manos del teclado. Pensado para la máxima eficiencia del desarrollador.</p>
+          </div>
+          <div class="relative group [perspective:1000px] order-1 md:order-2">
+            <img class="w-full h-auto object-cover rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.5)] border border-white/10 transition-transform duration-700 ease-out group-hover:[transform:rotateY(-5deg)_rotateX(5deg)]" src="./disposable_note_help.png" loading="lazy" alt="Vista de atajos de teclado">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="relative group [perspective:1000px] order-1">
+            <img class="w-full h-auto object-cover rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.5)] border border-white/10 transition-transform duration-700 ease-out group-hover:[transform:rotateY(5deg)_rotateX(5deg)]" src="./disposable_note_list.png" loading="lazy" alt="Vista de notas locales">
+          </div>
+          <div class="space-y-4 order-2">
+            <h3 class="text-2xl font-medium text-white">Local-first</h3>
+            <p class="text-gray-400 text-lg leading-relaxed">Tus notas viven en tu dispositivo primero. Privacidad total y velocidad instantánea sin depender de servidores ni conexiones inestables.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!---->
+<!-- <section class="scroll-section min-h-screen flex flex-col items-center justify-center p-6"> -->
+<!--       <div class="max-w-xl w-full bg-[#111111]/80 backdrop-blur-2xl border border-white/5 rounded-[2.5rem] p-10 md:p-12 shadow-2xl transition-all duration-300 hover:border-white/10"> -->
+<!---->
+<!--         <div class="text-center mb-10"> -->
+<!--           <h2 class="text-3xl font-semibold tracking-tight text-white mb-3">Empieza ahora</h2> -->
+<!--           <p class="text-gray-400 text-sm">Descarga dn para tu sistema operativo.</p> -->
+<!--         </div> -->
+<!---->
+<!--         <div class="space-y-4"> -->
+<!---->
+<!--           <a href="#" class="group relative flex items-center justify-between w-full p-4 md:p-5 bg-white/5 border border-white/10 rounded-2xl transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:scale-[1.02] overflow-hidden"> -->
+<!--             <div class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/5 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div> -->
+<!---->
+<!--             <div class="flex items-center gap-4 relative z-10"> -->
+<!--               <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-black/50 border border-white/10 text-white shrink-0"> -->
+<!--                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"> -->
+<!--                   <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /> -->
+<!--                 </svg> -->
+<!--               </div> -->
+<!--               <div class="text-left"> -->
+<!--                 <h3 class="text-white font-medium text-lg">Linux</h3> -->
+<!--                 <p class="text-gray-400 text-sm">.AppImage / .deb</p> -->
+<!--               </div> -->
+<!--             </div> -->
+<!---->
+<!--             <div class="relative z-10 flex items-center gap-2 text-white/60 group-hover:text-white transition-colors"> -->
+<!--               <span class="text-sm font-medium hidden md:block">Descargar</span> -->
+<!--               <svg class="w-5 h-5 transform group-hover:translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"> -->
+<!--                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /> -->
+<!--               </svg> -->
+<!--             </div> -->
+<!--           </a> -->
+<!---->
+<!--           <a href="#" class="group relative flex items-center justify-between w-full p-4 md:p-5 bg-white/5 border border-white/10 rounded-2xl transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:scale-[1.02] overflow-hidden"> -->
+<!--             <div class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/5 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div> -->
+<!---->
+<!--             <div class="flex items-center gap-4 relative z-10"> -->
+<!--               <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-black/50 border border-white/10 text-white shrink-0"> -->
+<!--                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"> -->
+<!--                   <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h6v6H4V4zm10 0h6v6h-6V4zM4 14h6v6H4v-6zm10 0h6v6h-6v-6z" /> -->
+<!--                 </svg> -->
+<!--               </div> -->
+<!--               <div class="text-left"> -->
+<!--                 <h3 class="text-white font-medium text-lg">Windows</h3> -->
+<!--                 <p class="text-gray-400 text-sm">.exe / .msi (64-bit)</p> -->
+<!--               </div> -->
+<!--             </div> -->
+<!---->
+<!--             <div class="relative z-10 flex items-center gap-2 text-white/60 group-hover:text-white transition-colors"> -->
+<!--               <span class="text-sm font-medium hidden md:block">Descargar</span> -->
+<!--               <svg class="w-5 h-5 transform group-hover:translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"> -->
+<!--                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /> -->
+<!--               </svg> -->
+<!--             </div> -->
+<!--           </a> -->
+<!---->
+<!--         </div> -->
+<!--       </div> -->
+<!--     </section>  -->
+<!---->
+    <section class="scroll-section min-h-screen flex flex-col items-center justify-center p-6">
+      <div class="text-center max-w-md">
+        <h2 class="text-2xl font-semibold text-white mb-3">by Jhoan</h2>
+        <p class="text-gray-400 mb-8 text-base leading-relaxed">
+          Software Engineer & Indie Hacker. Construyendo herramientas enfocadas en el usuario, escalables y con un diseño impecable.
+        </p>
+        <a href="https://jhoan.dev/" target="_blank" class="inline-flex items-center justify-center px-8 py-3 bg-white text-black font-semibold rounded-full hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+          @jhovadev
+        </a>
+      </div>
+    </section>
+
+  </main>
+</Layout>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  import Lenis from "lenis";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Instanciamos Lenis
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t: number): number => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true,
+  });
+
+  lenis.on('scroll', ScrollTrigger.update);
+
+  // Tipamos el tiempo del requestAnimationFrame
+  gsap.ticker.add((time: number) => {
+    lenis.raf(time * 1000);
+  });
+
+  gsap.ticker.lagSmoothing(0);
+
+  // 1. Parallax del Masonry
+  gsap.to(".masonry-grid", {
+    yPercent: -40,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "main",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: true
+    }
+  });
+
+  // 2. Animación de entrada
+  gsap.from(".main-card", { y: 50, opacity: 0, duration: 1.5, ease: "power4.out" });
+  gsap.from(".masonry-item", { y: 30, opacity: 0, duration: 1, stagger: 0.1, ease: "power3.out" });
+
+  // 3. Tipado estricto para las secciones del scroll
+  // Le decimos a TypeScript que esto es un array de HTMLElements
+  const sections: HTMLElement[] = gsap.utils.toArray('.scroll-section');
+  
+  sections.forEach((section: HTMLElement) => {
+    gsap.from(section, {
+      y: 80,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      }
+    });
+  });
+</script>
